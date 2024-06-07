@@ -24,6 +24,9 @@ def main():
     if cv2.waitKey(delay=30000) == 27:
         pass
 
+    # 释放资源
+    cv2.destroyAllWindows()
+
 
 if __name__ == '__main__':
     main()
