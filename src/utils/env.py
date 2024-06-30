@@ -26,6 +26,7 @@ config = load_config()
 QWEN_API_KEY = config["qwen_api_key"]
 CALENDAR_API_KEY = config["calendar_api_key"]
 WEATHER_API_KEY = config["weather_api_key"]
+COHERE_API_KEY = config["cohere_api_key"]
 
 
 if __name__ == '__main__':
