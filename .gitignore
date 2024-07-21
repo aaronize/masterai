@@ -162,3 +162,5 @@ runs/
 dataset/
 .DS_Store
 .secret.*
+.chainlit
+chainlit.md

@@ -12,6 +12,8 @@ class Add(BaseModel):
     b: int = Field(..., description="Second integer")
 
 
+
+
 class Multiply(BaseModel):
     """Multiply two integers together."""
 
@@ -24,9 +26,11 @@ tools = [Add, Multiply]
 
 def main():
     """"""
+    # llm = ChatOpenAI(model="gpt-4")
     llm = ChatOpenAI(model="gpt-3.5-turbo")
     llm_with_tools = llm.bind_tools(tools)
-    llm_with_tools.invoke(input="what is 2+4?")
+    output = llm_with_tools.invoke(input="what is 2+4?")
+    print(output)
 
 
 if __name__ == '__main__':
