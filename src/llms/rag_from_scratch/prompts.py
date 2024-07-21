@@ -44,9 +44,15 @@ Here is additional context relevant to the question:
 Use the above context and any background question + answer pairs to answer the question: \n {question}
 """
 
+#
 RAG_QA_PAIRS_TEMPLATE = """Here is a set of Q+A pairs:
 
 {context}
 
 Use these to synthesize an answer to the question: {question}
 """
+
+# RAG HyDE prompt
+RAG_HYDE_TEMPLATE = """Please write a scientific paper passage to answer the question
+Question: {question}
+Passage:"""
