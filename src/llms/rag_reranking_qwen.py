@@ -36,7 +36,7 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=512, chunk_overlap=50)
 text_splits = text_splitter.split_documents(documents)
 print(len(text_splits))
 
-# embedding model
+# embedding models
 embeddings = DashScopeEmbeddings()
 vec_store = FAISS.from_documents(text_splits, embeddings)
 

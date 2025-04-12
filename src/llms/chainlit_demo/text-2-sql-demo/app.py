@@ -21,7 +21,7 @@ A well-written SQL query that {input}:
 
 
 settings = {
-    "model": "gpt-3.5-turbo",
+    "models": "gpt-3.5-turbo",
     "temperature": 0,
     "max_tokens": 500,
     "top_p": 1,

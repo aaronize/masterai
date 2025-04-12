@@ -14,7 +14,7 @@ model = model.to(device='mps', dtype=torch.float16)
 
 tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-2', trust_remote_code=True)
 model.eval()
-print('>>> Load model success!')
+print('>>> Load models success!')
 
 if __name__ == '__main__':
     # image = Image.open('/Users/aaron/Workspace/masterai/src/llms/fine_tunings/model_minigpm_v_2/sh_OCR.jpeg').convert(

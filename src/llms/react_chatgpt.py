@@ -26,7 +26,7 @@ tools = [Add, Multiply]
 
 def main():
     """"""
-    # llm = ChatOpenAI(model="gpt-4")
+    # llm = ChatOpenAI(models="gpt-4")
     llm = ChatOpenAI(model="gpt-3.5-turbo")
     llm_with_tools = llm.bind_tools(tools)
     output = llm_with_tools.invoke(input="what is 2+4?")

@@ -10,7 +10,7 @@ def main():
     """"""
     # 加载模型
     model = YOLO(model="../../../models/yolov8n.pt")
-    # model = YOLO(model="../../../runs/detect/train6/weights/best.pt")
+    # models = YOLO(models="../../../runs/detect/train6/weights/best.pt")
 
     # 读取图像
     img = cv2.imread(filename="./cat01.jpeg")

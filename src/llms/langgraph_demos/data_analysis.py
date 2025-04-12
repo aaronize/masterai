@@ -32,14 +32,14 @@ class AnalysisAgent:
         ])
 
         if not self.model:
-            # self.model = OpenAI(model_name="gpt-4", temperature=0)
+            # self.models = OpenAI(model_name="gpt-4", temperature=0)
             # chat
             self.model = prompt | ChatOpenAI(model="gpt-4").bind_tools(self.tools)
 
         self.build_engine()
 
         # Graph create_react_agent doc: https://langchain-ai.github.io/langgraph/reference/prebuilt/#create_react_agent
-        # self.agent = create_react_agent(model=self.model, tools=self.tools, messages_modifier=prompt)
+        # self.agent = create_react_agent(models=self.models, tools=self.tools, messages_modifier=prompt)
 
     def build_engine(self):
         """
